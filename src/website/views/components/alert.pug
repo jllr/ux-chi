@@ -54,7 +54,9 @@ p.-text A button can be added to allow the user to dismiss the alert.
   .-p1
     .m-alert.-bubble.-warning.-hasIcon.-m2(data-title="Warning")
       | This is a warning alert
-      button(class='a-close',aria-label='Close')
+      button(class='a-close a-icon',aria-label='Close')
+        svg
+          use(xlink:href='#icon-x')
   :code(lang="html")
       <div class="m-alert -warning -hasIcon" data-title="Warning" role="alert">
         This is a warning alert
@@ -68,7 +70,9 @@ p.-text Apply a <code>-large</code> class to increase the size of the alert.
   .-p1
     .m-alert.-bubble.-warning.-large.-hasIcon.-m2(data-title="Warning")
       | This is a warning alert
-      button(class='a-close',aria-label='Close')
+      button(class='a-close a-icon',aria-label='Close')
+        svg
+          use(xlink:href='#icon-x')
   :code(lang="html")
       <div class="m-alert -warning -large -hasIcon" data-title="Warning" role="alert">
         This is a warning alert
@@ -99,7 +103,9 @@ p.-text
     each type in ['success', 'danger', 'warning', 'info', 'light', 'dark']
       .m-alert.-toast.-hasIcon.-m2(class=`-${type}`, data-title=`${type}`)
         = `This is a ${type} alert`
-        button(class='a-close',aria-label='Close')
+        button(class='a-close a-icon',aria-label='Close')
+          svg
+            use(xlink:href='#icon-x')
   :code(lang="html")
       <div class="m-alert -toast -success -hasIcon" data-title="Success" role="alert">
         This is a success alert

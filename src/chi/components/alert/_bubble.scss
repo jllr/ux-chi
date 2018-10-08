@@ -5,9 +5,7 @@
     &.-bubble {
 
       & > button.a-close {
-        position: absolute;
-        right: 1rem;
-        top: 0.8125rem;
+        top: 1.3125rem;
       }
 
       &.-small {
@@ -17,7 +15,6 @@
 
         & > button.a-close {
           top: 0.3rem;
-          transform: initial;
         }
       }
 
@@ -26,8 +23,7 @@
         padding-top: 0.75rem;
 
         & > button.a-close {
-          top: 0.9375rem;
-          transform: initial;
+          top: 1rem;
         }
 
         &::before {

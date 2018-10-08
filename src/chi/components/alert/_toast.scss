@@ -14,9 +14,7 @@
       }
 
       & > button.a-close {
-        position: absolute;
-        right: 0.9375rem;
-        top: 0.9375rem;
+        top: 1rem;
       }
 
       @each $state in map-keys($states) {

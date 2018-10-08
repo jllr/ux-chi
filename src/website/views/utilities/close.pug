@@ -7,7 +7,9 @@ p.-text Use a dismiss button with the class <code>a-close</code> to use in compo
 
 .example.-mb3
   .-p3
-    button(class='a-close',aria-label='Close')
+    button(class='a-close a-icon',aria-label='Close')
+      svg
+        use(xlink:href='#icon-x')
   :code(lang="html")
     <button class="a-close" aria-label="Close"></button>
 
@@ -19,7 +21,9 @@ p.-text A button can be added to allow the user to dismiss the alert.
   .-p1
     .m-alert.-bubble.-warning.-hasIcon.-m2(data-title="Warning")
       | This is a warning alert
-      button(class='a-close',aria-label='Close')
+      button(class='a-close a-icon',aria-label='Close')
+        svg
+          use(xlink:href='#icon-x')
   :code(lang="html")
     <div class="m-alert -warning -hasIcon" data-title="Warning" role="alert">
       This is a warning alert
@@ -32,7 +36,9 @@ h4 In Modals
     .a-modal(style="margin-top:0;")
       .a-modal__header
         h3.a-modal__title Modal Title
-        button.a-close(aria-label='Close')
+        button.a-close.a-icon(aria-label='Close')
+          svg
+            use(xlink:href='#icon-x')
       .a-modal__content
         p.-text.-m0 Modal content
       .a-modal__footer

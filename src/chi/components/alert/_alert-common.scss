@@ -72,6 +72,13 @@ $states: (
       }
     }
 
+    & > button.a-close {
+      height: 0.75rem;
+      position: absolute;
+      right: 1rem;
+      width: 0.75rem;
+    }
+
     @each $state in map-keys($states) {
       &.-#{$state} {
         background-color: map-get(map-get($states, $state), background-color);
