@@ -176,6 +176,7 @@ class Sidenav extends Component {
                     Util.removeClass(activeDrawerElement, DRAWER_ITEM_LIST_EXPANDED);
                   }
                 });
+              this.hideAll();
             }
             Util.addClass(menuItemToActivate, chi.classes.ACTIVE);
           });
