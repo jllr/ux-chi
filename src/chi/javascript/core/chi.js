@@ -7,8 +7,10 @@ let chi = {
     ANIMATED: '-animated',
     CLOSED: '-closed',
     DISABLED: '-disabled',
+    EXPANDED: '-expanded',
     INACTIVE: '-inactive',
-    TRANSITIONING : '-transitioning'
+    TRANSITIONING : '-transitioning',
+    UNSELECTED: '-unselected'
   },
   componentIndex: 0,
   registeredComponents: {},
