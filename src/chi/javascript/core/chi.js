@@ -5,6 +5,7 @@ let chi = {
   classes : {
     ACTIVE: '-active',
     ANIMATED: '-animated',
+    CLOSE: '-close',
     CLOSED: '-closed',
     DISABLED: '-disabled',
     EXPANDED: '-expanded',

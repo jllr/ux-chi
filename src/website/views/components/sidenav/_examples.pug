@@ -1464,12 +1464,17 @@ script.
     function() {
       chi.sidenav(document.getElementById('example-base'));
       chi.sidenav(document.getElementById('example-base-inverse'));
+      chi.sidenav(document.getElementById('example-open-on-hover'), {
+        openOnHover: true,
+        autoClose: true
+      });
       chi.sidenav(document.getElementById('example-sizes-sm'));
       chi.sidenav(document.getElementById('example-sizes-md'));
       chi.sidenav(document.getElementById('example-sizes-lg'));
 
       chi.tab(document.getElementById('examples-default'));
       chi.tab(document.getElementById('examples-inverse'));
+      chi.tab(document.getElementById('examples-open-on-hover-tabs'));
       chi.tab(document.getElementById('examples-sizes-sm'));
       chi.tab(document.getElementById('examples-sizes-md'));
       chi.tab(document.getElementById('examples-sizes-lg'));
